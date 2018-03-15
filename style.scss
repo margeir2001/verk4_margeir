@@ -1,0 +1,203 @@
+/*Margeir Verkefni 4 - SCSS*/
+
+//litir
+$hvitur: white;
+$grar: #BE90D4;
+$svartur: black;
+$appelsinugulur: #fe6246;
+$blar: #069;
+$blar2: azure;
+$blar3: rgba(253, 84, 33, 0.7);
+$cerulean: #00bfff;
+
+//letur
+$font_0: Baloo;
+$font_1: Open Sans;
+$font_2: Rubik;
+$font_3: sans-serif;
+$font_4: Source Sans Pro;
+
+//linkar
+$url_0: url(photo.jpg);
+
+p {
+	font-family: $font_0, $font_1;
+	padding: 0 20px;
+	height: 48px;
+	margin-top: 17px;
+	padding-top: -3px;
+	color: $hvitur;
+}
+.main {
+	padding: 16px;
+	margin-top: 30px;
+	height: 1500px;
+}
+body {
+	margin: 0 auto;
+	font-family: $font_2, $font_3;
+	background-image: $url_0;
+}
+a {
+	height: 30px;
+	color: $hvitur;
+	text-decoration: none;
+	padding: 20px;
+	&:hover {
+		color: $grar;
+		margin-top: 10px;
+	}
+}
+.hlidardalkur {
+	position: fixed;
+	top: 160px;
+	left: 0;
+	bottom: 0;
+	width: 48px;
+	text-align: center;
+}
+.bar {
+	text-align: center;
+	height: 50px;
+	background-color: $svartur;
+	padding-top: 20px;
+	position: fixed;
+	width: 100%;
+}
+.bar_div {
+	margin: auto;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.left {
+	background-color: $grar;
+	height: 300px;
+	width: 300px;
+	margin: 10px;
+	transition: .5s;
+}
+.right {
+	background-color: $grar;
+	height: 300px;
+	width: 300px;
+	margin: 10px;
+	transition: .5s;
+}
+.center {
+	background-color: $grar;
+	height: 300px;
+	width: 300px;
+	margin: 10px;
+	transition: .5s;
+}
+.haus {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: $appelsinugulur;
+	margin-bottom: 0;
+	width: 100%;
+	h1 {
+		padding-left: 15px;
+	}
+}
+h2 {
+	padding: 0 20px;
+	color: $hvitur;
+}
+footer {
+	background-color: $svartur;
+	padding: 20px;
+}
+.icon {
+	height: 20px;
+	height: 30px;
+	position: fixed;
+	width: 1100px;
+	bottom: 0;
+	left: calc(50% -(1100px / 2));
+	z-index: 999;
+	color: $hvitur;
+	font-size: 1.5em;
+	text-align: center;
+	background-color: $blar;
+	transition: all .9s ease;
+	cursor: pointer;
+}
+.section_body {
+	display: flex;
+	margin-bottom: 50px;
+	width: 75%;
+	margin: auto;
+	text-align: center;
+}
+@media screen and(max-width: 48em) {
+	.section_body {
+		flex-direction: column;
+		.box {
+			width: 100%;
+		}
+	}
+	.center {
+		width: 100%;
+		margin: 0;
+		margin-top: 10px;
+	}
+	.left {
+		width: 100%;
+		margin: 0;
+		margin-top: 10px;
+	}
+	.right {
+		width: 100%;
+		margin: 0;
+		margin-top: 10px;
+	}
+}
+.footer_text {
+	color: $blar2;
+	background-color: $svartur;
+}
+.footer_title {
+	color: $blar2;
+	margin: 0 20px;
+}
+.nav {
+	list-style-type: none;
+	overflow: hidden;
+	background-color: $blar3;
+	height: 60px;
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	margin-top: 0;
+}
+.navtext {
+	color: $hvitur;
+	text-decoration: none;
+	font-family: $font_4, $font_3;
+	font-size: 17px;
+	padding-top: 18px;
+	opacity: 1;
+	text-align: center;
+}
+.box {
+	background-color: $svartur;
+	margin-top: 100px;
+	width: 100%;
+	height: 600px;
+}
+.nav_links {
+	width: 500px;
+	margin-top: 15px;
+	float: right;
+}
+aside:hover {
+	background-color: $cerulean;
+	transition: .5s;
+}
+article:hover {
+	background-color: $cerulean;
+	transition: .5s;
+}
